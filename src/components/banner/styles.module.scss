@@ -1,0 +1,140 @@
+.banner {
+  z-index: 0;
+  width: 100%;
+  height: calc(100vh - 30px);
+  position: relative;
+
+  .frame {
+    max-width: 100%;
+    height: 100%;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-image: linear-gradient(
+        270deg,
+        rgba(4, 25, 29, 0.1) 0%,
+        rgba(4, 25, 29, 0.8) 80%
+      );
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .frame_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    width: 100%;
+
+    .container {
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+      height: 300px;
+    }
+
+    .main_title {
+      margin-top: 62px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 100%;
+
+      .subTitle {
+        position: relative;
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 3px;
+        font-weight: 700;
+        margin: 0;
+        padding: 20px 0;
+
+        span {
+          position: relative;
+          cursor: pointer;
+
+          &::before {
+            content: "";
+            height: 4px;
+            border-radius: 2px;
+            width: 30px;
+            position: absolute;
+            right: 13px;
+            top: -14px;
+            background-color: #f39c12;
+          }
+        }
+      }
+
+      .title {
+        margin-bottom: 20px;
+        span {
+          font-size: 50px;
+          font-family: "Playfair Display", serif;
+          font-weight: 800;
+        }
+      }
+
+      .text {
+        margin-bottom: 20px;
+        span {
+          opacity: 0.6;
+          font-size: 15px;
+          font-weight: 300;
+          font-family: "Josefin Sans", sans-serif;
+        }
+      }
+
+      .button {
+        position: relative;
+        display: inline-flex;
+        width: fit-content;
+        margin: auto;
+        border: none;
+        outline: none;
+        background-color: #f39c12;
+        height: 50px;
+        padding: 0 80px;
+        border-radius: 5px;
+        align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        text-transform: capitalize;
+
+        &::after {
+          content: "";
+          height: 7px;
+          width: calc(100% - 20px);
+          position: absolute;
+          bottom: -7px;
+          border-radius: 0 0 5px 5px;
+          background-color: #f2f6f7;
+          opacity: 0.15;
+          -webkit-transition: 0.3s ease-in-out;
+          transition: 0.3s ease-in-out;
+          left: 10px;
+        }
+
+        span {
+          color: #fff;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}

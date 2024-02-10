@@ -1,0 +1,32 @@
+.content_frame {
+  padding-right: 45px;
+  padding-left: 45px;
+  //   border-radius: 10px;
+  z-index: 10px;
+
+  .content_box {
+    background-color: #fff;
+    border-radius: 10px;
+
+    .content_frama_start {
+      padding-top: 60px;
+    }
+
+    .swiper_menu {
+      text-align: center;
+      padding-left: 60px;
+      padding-right: 60px;
+
+      .swiper_nav {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+
+        padding-bottom: 80px;
+      }
+    }
+  }
+}

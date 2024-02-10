@@ -1,0 +1,23 @@
+.swiper_pagination {
+  border: none;
+  outline: none;
+  background: transparent;
+  border-radius: 5px;
+  padding: 8px 20px;
+  color: #1a2f33;
+  font-weight: 800;
+  font-size: 12px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background 0.3s;
+  letter-spacing: 2px;
+
+  &:active {
+    background: #f39c12;
+  }
+}
+
+.active {
+  background: #f39c12; // لون الخلفية عند الضغط
+}
+
