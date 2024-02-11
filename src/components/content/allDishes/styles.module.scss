@@ -103,7 +103,6 @@
 .box_title {
   text-align: start;
   padding: 0 30px 30px 30px;
-
   h2 {
     margin-bottom: 15px;
     font-size: 1.25rem;
@@ -134,7 +133,9 @@
   padding: 30px;
   position: relative;
   z-index: 3;
-
+  @media (max-width: 1024px) {
+    padding: 20px;
+  }
   .menu_meat {
     flex: 2;
     text-align: start;
