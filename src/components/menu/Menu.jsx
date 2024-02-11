@@ -1,7 +1,14 @@
 import { Row, Col } from "react-bootstrap"
 import styles from "./styles.module.scss"
 import Pagination from "../pagination/Pagination"
-
+import AllDishesContent from "../content/allDishes/AllDishesContent"
+import ChickenContent from "../content/chicken/ChickenContent"
+import DrinksContent from "../content/drinks/DrinksContent"
+import MeatContent from "../content/meat/MeatContent"
+import FishContent from "../content/fish/FishContent"
+import ShrimpContent from "../content/shrimp/ShrimpContent"
+import XieContent from "../content/xie/XieContent"
+import ExtrasContent from "../content/extrasContent/ExtrasContent"
 
 // eslint-disable-next-line react/prop-types
 const Menu = ({ selectedMenu, handleMenuClick }) => {
@@ -41,38 +48,6 @@ const Menu = ({ selectedMenu, handleMenuClick }) => {
       </div>
     </section>
   )
-}
-
-const AllDishesContent = () => {
-  return <div>All Dishes Content</div>
-}
-
-const MeatContent = () => {
-  return <div>Meat Content</div>
-}
-
-const ChickenContent = () => {
-  return <div>Chicken Content</div>
-}
-
-const FishContent = () => {
-  return <div>Fish Content</div>
-}
-
-const ShrimpContent = () => {
-  return <div>Shrimp Content</div>
-}
-
-const XieContent = () => {
-  return <div>Xie Content</div>
-}
-
-const DrinksContent = () => {
-  return <div>Drinks Content</div>
-}
-
-const ExtrasContent = () => {
-  return <div>Extras Content</div>
 }
 
 export default Menu

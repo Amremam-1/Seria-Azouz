@@ -1,0 +1,50 @@
+.section {
+    text-align: center;
+  
+    .sub_title {
+      position: relative;
+      text-transform: uppercase;
+      font-size: 14px;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin: 0;
+      padding: 20px 0;
+  
+      span {
+        position: relative;
+        cursor: pointer;
+  
+        &::before {
+          content: "";
+          height: 4px;
+          border-radius: 2px;
+          width: 30px;
+          position: absolute;
+          right: 36px;
+          top: -14px;
+          background-color: #f39c12;
+        }
+      }
+    }
+  
+    .title {
+      margin-bottom: 20px;
+      span {
+        font-size: 50px;
+        font-family: "Playfair Display", serif;
+        font-weight: 800;
+      }
+    }
+  
+    p {
+      margin-bottom: 60px;
+  
+      span {
+        opacity: 0.6;
+        font-size: 14px;
+        font-weight: 300;
+        font-family: "Josefin Sans", sans-serif;
+      }
+    }
+  }
+  

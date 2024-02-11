@@ -1,8 +1,9 @@
 import styles from "./styles.module.scss"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 // eslint-disable-next-line react/prop-types
-const SideBar = ({ activeDropMenu, handleMenuClick }) => {
+const SideBar = ({ selectedMenu, handleMenuClick }) => {
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const menus = [
     "All Dishes",
     "Meat",
@@ -16,12 +17,19 @@ const SideBar = ({ activeDropMenu, handleMenuClick }) => {
 
   const [activeMenu, setActiveMenu] = useState(0)
 
+  useEffect(() => {
+    const index = menus.indexOf(selectedMenu)
+    if (index !== -1) {
+      setActiveMenu(index)
+    }
+  }, [selectedMenu, menus])
+  
   const toggle = (index) => {
     setActiveMenu(index)
   }
 
   return (
-    <div className={`${styles.sideBar} ${activeDropMenu && styles.active}`}>
+    <div className={`${styles.sideBar} ${selectedMenu && styles.active}`}>
       <div className={styles.container}>
         <div className={styles.pagination}>
           {menus.map((menu, index) => (

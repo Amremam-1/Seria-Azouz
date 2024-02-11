@@ -22,7 +22,7 @@ const NavBar = ({ toggleDropMenu, activeDropMenu , selectedMenu, handleMenuClick
             <span className={styles.line1}></span>
             <span className={styles.line1}></span>
           </div>
-          {activeDropMenu && <SideBar activeDropMenu={activeDropMenu} selectedMenu={selectedMenu}  handleMenuClick={handleMenuClick}/>}
+          {activeDropMenu && <SideBar  selectedMenu={selectedMenu}  handleMenuClick={handleMenuClick}/>}
         </div>
       </header>
     </>
