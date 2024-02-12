@@ -11,7 +11,7 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css"
 import "swiper/css/free-mode"
 import "swiper/css/pagination"
-import { Pagination } from "swiper/modules"
+import { Navigation } from "swiper/modules"
 
 import meat from "../../public/images/1.jpg"
 import chicken from "../../public/images/2.jpg"
@@ -96,10 +96,11 @@ const Footer = () => {
               <Swiper
                 slidesPerView={3}
                 spaceBetween={10}
-                pagination={{
-                  clickable: true,
-                }}
-                modules={[Pagination]}
+                // pagination={{
+                //   clickable: true,
+                // }}
+                navigation={true}
+                modules={[Navigation]}
                 className="mySwiper"
                 loop={true}
               >
