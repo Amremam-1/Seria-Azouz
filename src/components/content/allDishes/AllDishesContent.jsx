@@ -71,6 +71,7 @@ const AllDishesContent = ({ data }) => {
             },
           }}
           className="mySwiper"
+          loop={true}
         >
           {data.map((item, index) => (
             <>
