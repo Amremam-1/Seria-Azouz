@@ -6,11 +6,11 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css"
 import "swiper/css/free-mode"
 import "swiper/css/pagination"
+import { Pagination } from "swiper/modules"
 import { useState } from "react"
 
 import { IoIosArrowUp } from "react-icons/io"
 import { IoIosArrowDown } from "react-icons/io"
-
 const AllDishesContent = ({ data }) => {
   const [openMenu, setOpenMenu] = useState(-1)
 
@@ -47,6 +47,7 @@ const AllDishesContent = ({ data }) => {
           pagination={{
             clickable: true,
           }}
+          modules={[Pagination]}
           breakpoints={{
             2560: {
               slidesPerView: 3, // Set the number of slides to 1 for screens larger than 768 pixels
